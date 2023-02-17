@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+div.content{
+    width: 100%;
+    max-width: 1000px;
+    padding: 4em;
+}
+
+header{
+    border: solid 1px gray;
+    padding: 20px;
+    text-transform: uppercase;
+    margin:50px auto ;
+
+}
+
+section#startpage{
+    border-top: solid 10px aqua;
+    border-bottom: solid 1px gray;
+    border-right: solid 1px gray;
+    border-left: solid 1px gray;
+    padding: 2rem;
+}
+a:link{
+    color:aqua
+}
+
+button{
+    font-size: 25px;
+    padding: 1rem;
+    border-top: solid 1px grey;
+    border-right: solid 1px grey;
+    border-left: solid 1px grey;
+    border-bottom: solid 1px aqua;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    color: grey;
+}
+button:hover{
+    background-color: aqua;
+    color: white;
+}
+
+.pushed{
+    border-top: solid 1px aqua;
+    border-bottom: solid 1px aqua;
+    border-right: solid 1px aqua;
+    border-left: solid 1px aqua;
+    color: white;
+    background-color: aqua;
+}
