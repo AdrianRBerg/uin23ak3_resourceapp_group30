@@ -1,3 +1,4 @@
+
 :root {
     --main-color: #25dfe6;
     --darker-grey: #5e5e5e;
@@ -17,7 +18,9 @@ div.content{
 }
 
 header{
+
     border: solid 1px var(--grey);
+
     padding: 20px;
     text-transform: uppercase;
     margin:50px auto ;
@@ -33,6 +36,7 @@ section#startpage{
 }
 a:link{
     color:var(--main-color)
+
 }
 
 button{
@@ -49,6 +53,7 @@ button{
 }
 button:hover{
     background-color: var(--main-color);
+
     color: white;
 }
 

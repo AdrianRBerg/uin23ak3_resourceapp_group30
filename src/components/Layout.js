@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { useState } from "react";
 import Tekst from './tekst.js';
 
@@ -8,7 +9,6 @@ function Layout({}) {
     function endreTekst(tekst) {
         setState(tekst)
     }
-
 
     return(
         <div class="content">

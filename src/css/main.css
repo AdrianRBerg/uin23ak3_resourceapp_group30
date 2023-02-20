@@ -1,3 +1,4 @@
+
 :root {
   --main-color: #25dfe6;
   --darker-grey: #5e5e5e;
@@ -10,7 +11,7 @@ body {
 
 div.content {
   width: 100%;
-  max-width: 1000px;
+
   padding: 4em; }
 
 header {
@@ -32,6 +33,7 @@ a:link {
 button {
   font-size: 25px;
   padding: 1rem;
+
   border-top: solid 1px var(--grey);
   border-right: solid 1px var(--grey);
   border-left: solid 1px var(--grey);
@@ -54,3 +56,4 @@ button:hover {
   background-color: var(--main-color); }
 
 /*# sourceMappingURL=main.css.map */
+
