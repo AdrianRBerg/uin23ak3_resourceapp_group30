@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbeidskrav 2</title>
+    <link href="design.css" rel="stylesheet">
+    <script src="ressurser.js"></script>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>Ressursarkiv</h1>
+        </header>
+        <!-- https://www.w3schools.com/tags/tag_button.asp  For å aktivere tabsene, bruker jeg en button funksjon per kategori. Kaller expandObject funksjonen og sender med kategori, knapp som skal aktiveres og knapper som skal deaktiveres som argumenter.-->
+        <button id="button1" onclick="expandObject('HTML', '#button1', '#button2', '#button3', '#button4', '#button5')">HTML</button>
+        <button id="button2" onclick="expandObject('CSS', '#button2', '#button1', '#button3', '#button4', '#button5')">CSS</button>
+        <button id="button3" onclick="expandObject('JavaScript', '#button3', '#button2', '#button4', '#button5', '#button1')">JavaScript</button>
+        <button id="button4" onclick="expandObject('React', '#button4', '#button2', '#button3', '#button5', '#button1')">React</button>
+        <button id="button5" onclick="expandObject('Sanity and headless CMS', '#button5', '#button2', '#button3', '#button4', '#button1')">Sanity & headless CMS</button>
+
+        <section id="startpage">
+            <h2>Home</h2>
+            <p>
+                Velkommen til ressursarkivet, velg et rammeverk å lese om!
+            </p>
+        </section>
+    </div>
+
+<script>
+
+//expandObject tar i mot kategorinavn, og knapper som skal aktiveres og deaktiveres.
+//Denne iterer igjennom resources arrayen og skriver ut tilhørende verdier for kategorien som er sendt inn til funksjonen.
+//Når brukeren trykker på knappen får vedkommende se beskrivelse, url og tittel på url som tilhører temaet/kategorien.
+function expandObject(tab_category, button, button2, button3, button4, button5) {
+    let tabcontent = ""
+    resources.map(resource => {
+        if (resource.category.includes(tab_category)) 
+        {
+            tabcontent+= `<h2>${resource.category}</h2>
+            <p>${resource.text}</p>
+            <ul>
+
+            ${resource.sources.map(source => 
+                `<li><a href=${source.url}>${source.title}</a></li>`).join(" ")}
+            </ul>`//siden jeg konverterte arrayen til en string, ble det med en komma. Denne fjerner jeg med .join(" ")
+        }
+
+})
+//https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+//Setter #startpage lik innholdet i tabcontent når kategori er angitt.
+//Gjør trykket knapp aktiv, og fjerner eventuelle andre aktiverte knapper.
+    document.querySelector("#startpage").innerHTML = tabcontent
+    document.querySelector(button).classList.add("pushed")
+    document.querySelector(button2).classList.remove("pushed")
+    document.querySelector(button3).classList.remove("pushed") 
+    document.querySelector(button4).classList.remove("pushed")
+    document.querySelector(button5).classList.remove("pushed")
+}
+    
+</script>
+</body>
+</html>
