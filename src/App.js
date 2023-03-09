@@ -4,6 +4,9 @@ import './css/main.css';
 import Resources from './components/Resources';
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from "react-router-dom";
 
+
+// Hentet fra:
+// https://www.codecademy.com/learn/learn-react-router
 const router = createBrowserRouter(createRoutesFromElements(
   <Route>
     <Route path="/" element={<Resources category={''} />} />
