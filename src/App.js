@@ -9,7 +9,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Resources category={''} />} />
     <Route path="/HTML" element={<Resources category={'HTML'} />} />
     <Route path="/CSS" element={<Resources category={'CSS'} />} />
-    <Route path="/JavaScript" element={<Resources category={'React'} />} />
+    <Route path="/JavaScript" element={<Resources category={'JavaScript'} />} />
     <Route path="/React" element={<Resources category={'React'} />} />
     <Route path="/Sanity" element={<Resources category={'Sanity and headless CMS'} />} />
   </Route>
