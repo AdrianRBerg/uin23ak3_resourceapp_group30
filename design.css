@@ -1,34 +1,35 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     color: gray;
 }
 
-div.content{
+div.content {
     width: 100%;
     max-width: 1000px;
     padding: 4em;
 }
 
-header{
+header {
     border: solid 1px gray;
     padding: 20px;
     text-transform: uppercase;
-    margin:50px auto ;
+    margin: 50px auto;
 
 }
 
-section#startpage{
+section#startpage {
     border-top: solid 10px aqua;
     border-bottom: solid 1px gray;
     border-right: solid 1px gray;
     border-left: solid 1px gray;
     padding: 2rem;
 }
-a:link{
-    color:aqua
+
+a:link {
+    color: aqua
 }
 
-button{
+button {
     font-size: 25px;
     padding: 1rem;
     border-top: solid 1px grey;
@@ -40,12 +41,13 @@ button{
     background-color: whitesmoke;
     color: grey;
 }
-button:hover{
+
+button:hover {
     background-color: aqua;
     color: white;
 }
 
-.pushed{
+.pushed {
     border-top: solid 1px aqua;
     border-bottom: solid 1px aqua;
     border-right: solid 1px aqua;
